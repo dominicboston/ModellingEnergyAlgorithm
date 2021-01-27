@@ -18,14 +18,9 @@ export default function firstRunOperations ({
 
   annualTechGenOriginal = annualConst.annualTechGen
   annualDemandOriginal = annualConst.annualDemand
-  totalAnnualCarbonOriginal =
-    initialData.optionsData.year === 2050
-      ? initialData.optionsData.comparisonEmission
-      : annualConst.totalAnnualCarbon
-  totalAnnualCostOriginal =
-    initialData.optionsData.year === 2050
-      ? initialData.optionsData.comparisonWholesaleCost
-      : annualConst.totalAnnualCost
+  totalAnnualCarbonOriginal = initialData.optionsData.comparisonEmission
+  totalAnnualCostOriginal = initialData.optionsData.comparisonWholesaleCost
+
   originalReserves = min(reservesAvali)
 
   return {
